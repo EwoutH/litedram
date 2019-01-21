@@ -3,8 +3,8 @@ dist: Xenial
 python: "3.7"
 
 install:
- - setup.py setup
+ - 
     
 jobs:
   include:
-   - script: test/*.py
+   - script: python test/*.py
