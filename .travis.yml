@@ -3,7 +3,7 @@ dist: Xenial
 python: "3.7"
 
 install:
- - export var1="$(pwd)"
+ - var1="$(pwd)"
 
  - git clone https://github.com/m-labs/migen
  - cd migen
