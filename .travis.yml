@@ -5,7 +5,7 @@ python: "3.7"
 install:
  - export var1="$(pwd)"
 
- - git clone https://github.com/m-labs/migen --recursive
+ - git clone https://github.com/m-labs/migen
  - cd migen
  - python3 setup.py develop
  - cd var1
