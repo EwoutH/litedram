@@ -1,6 +1,6 @@
 language: python
 dist: Xenial
-python: "3.7"
+python: "3.5"
 
 env:
  - TEST: 'test.__init__'
