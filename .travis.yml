@@ -3,9 +3,16 @@ dist: Xenial
 python: "3.7"
 
 install:
+ - export var1="$(pwd)"
+
+ - git clone https://github.com/m-labs/migen --recursive
+ - cd migen
+ - python3 setup.py develop
+ - cd var1
+
  - git clone https://github.com/enjoy-digital/litex --recursive
  - cd litex
  - python3 setup.py develop
- - cd ..
+ - cd var1
     
 script: python setup.py test
