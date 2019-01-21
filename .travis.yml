@@ -10,7 +10,7 @@ install:
  - python3 setup.py develop
  - cd $var1
 
- - git clone https://github.com/enjoy-digital/litex
+ - git clone https://github.com/enjoy-digital/litex --recursive
  - cd litex
  - python3 setup.py develop
  - cd $var1
