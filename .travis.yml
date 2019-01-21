@@ -10,18 +10,18 @@ install:
  - python3 setup.py develop
  - cd $var1
 
- - git clone https://github.com/enjoy-digital/litex  --recursive
+ - git clone https://github.com/enjoy-digital/litex
  - cd litex
  - python3 setup.py develop
  - cd $var1
     
 jobs:
   include:
-   - script: python -m unittest test.__init__.py
-   - script: python -m unittest test.common.py
-   - script: python -m unittest test.test_axi.py
-   - script: python -m unittest test.test_bist.py
-   - script: python -m unittest test.test_downconverter.py
-   - script: python -m unittest test.test_ecc.py
-   - script: python -m unittest test.test_examples.py
-   - script: python -m unittest test.test_upconverter.py
+   - script: python -m unittest test.__init__
+   - script: python -m unittest test.common
+   - script: python -m unittest test.test_axi
+   - script: python -m unittest test.test_bist
+   - script: python -m unittest test.test_downconverter
+   - script: python -m unittest test.test_ecc
+   - script: python -m unittest test.test_examples
+   - script: python -m unittest test.test_upconverter
