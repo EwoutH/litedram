@@ -2,9 +2,8 @@ language: python
 dist: Xenial
 python: "3.7"
 
-    
 install:
-    - cd EwoutH/litedram
-    - setup
+ - python setup.py
     
-script: test/*.py
+script:
+ - python  test/*.py
