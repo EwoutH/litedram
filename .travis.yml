@@ -15,7 +15,7 @@ install:
  - python3 setup.py develop
  - cd $var1
     
-jobs
+jobs:
   include:
    - script: python -m unittest test.__init__.py
    - script: python -m unittest test.common.py
