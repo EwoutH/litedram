@@ -3,4 +3,5 @@ dist: Xenial
 python: "3.7"
     
 install:
+    - cd EwoutH/litedram
     - setup.py
